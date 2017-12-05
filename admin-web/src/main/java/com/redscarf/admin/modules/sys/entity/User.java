@@ -272,7 +272,8 @@ public class User extends DataEntity<User> {
 	}
 
 	@JsonIgnore
-	@ExcelField(title="拥有角色", align=1, sort=800)
+	//TODO: , fieldType = RoleListType.class
+	@ExcelField(title="拥有角色", align=1, sort=800 )
 	public List<Role> getRoleList() {
 		return roleList;
 	}
